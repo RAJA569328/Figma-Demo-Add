@@ -1,0 +1,20 @@
+/* predefine CSS Color
+=> We define color to call the color name and use it insted of entering the color code everytime.
+=> Use :root in CSS to to Add ColorName to ColorCode.
+=> Syntax => 
+:root{
+    --ColorName : #ColorCode
+}
+ColorNAme is here is a VariableNAme thats why we call with VAR Variable;
+=> Syntax for calling ColorCode using ColorNAme : 
+TagName/.ClassName{
+    background-color: var(ColorNAme);
+} */
+:root{
+    --Orange : #DA722C;
+    --DarkBlue : #057ADA;
+    --White : #E8F7FB;
+    --GreenBlue : #023047;
+    --Black : #070917;
+    --Lightblue : #6F7DFB;
+}
