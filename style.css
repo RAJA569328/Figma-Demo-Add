@@ -10,11 +10,200 @@ ColorNAme is here is a VariableNAme thats why we call with VAR Variable;
 TagName/.ClassName{
     background-color: var(ColorNAme);
 } */
-:root{
-    --Orange : #DA722C;
-    --DarkBlue : #057ADA;
-    --White : #E8F7FB;
-    --GreenBlue : #023047;
-    --Black : #070917;
-    --Lightblue : #6F7DFB;
+:root {
+  --Orange: #da722c;
+  --DarkBlue: #057ada;
+  --White: #e8f7fb;
+  --GreenBlue: #023047;
+  --Black: #070917;
+  --Lightblue: #6f7dfb;
+}
+/* *************************** */
+/* After and before is pseudo class
+It is used to create border and padding. 
+Box-Sizing: border-box=> each tag has some Border and padding. To avoid and make border and padding NULL we use border-box(it assumes a ZERO). we have to give Margin as Zero every time in CSS.
+::after
+::before
+*/
+*::after,
+*::before {
+  box-sizing: border-box; 
+}
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif; /*Copied "CSS rules to specify families"from GOOGLE FONT
+  if Poppins didn't work San-serif will work */
+}
+
+.navbar{
+    max-width: 1134vw;
+    margin: 0;
+}
+
+.btn{
+display: inline-block;
+padding: 16px 32px;
+border-radius: 24px;
+color: var(--White);
+text-decoration: none;
+font-weight: 700;
+font-size: 18px;
+position : relative;
+}
+.blue{
+    background-color: var(--DarkBlue);
+}
+.orange{
+    background-color: var(--Orange);
+}
+.enrollIicon::before{
+    content: url(/images/PencilArt-Icon.svg);
+    position: absolute;
+    top: 50%;
+    left: 55px;
+    transform: translateY(-50%);
+}
+header{
+    background: linear-gradient(180deg , var(--Lightblue) 0%, #26308c 100%);
+    height: 100vh;
+    width: 100vw;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 1134px;
+    top: 0px;
+    padding: 36px 0px;
+    z-index: 100; /* this amke to scroll in background in FiXED POSTION TYPE*/
+}
+.logo{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: 40px ;
+    color: var(--White);
+}
+ul{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    list-style: none;  /*to remove the Dot from list.*/
+}
+
+a{
+    color: var(--White);
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+}
+/* ****************** */
+h1{
+    color: var(--White);
+    font-size: 50px;
+    font-family: 'Raleway', sans-serif;
+    width: 457px;
+    height: 126px;
+    position: absolute;
+    top: 216px;
+    left: 116px;
+    font-weight: 900;
+}
+p{
+    font-weight: 400;
+    color: var(--White);
+}
+.comprehensive{
+    width: 457px;
+    height: 96px;
+    position: absolute;
+    top: 363px;
+    left: 116px;
+}
+.enrollIicon{
+    width: 183px;
+    height: 59px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 489px;
+    left: 116px;
+    padding: 16px 32px;        
+}
+.heroImage{
+    width: 446;
+    height: 582px;
+    position: absolute;
+    top: 186px;
+    left: 841px;
+}
+.FirstWhitebox{
+    width: 206px;
+    height: 90px;
+    background-color: var(--White);
+    border-radius: 24px;
+    position: absolute;
+    top: 323px;
+    left: 623px;
+}
+.FirstWhiteBoxContent>div{
+    font-size: 36px;
+    color: var(--GreenBlue);
+    font-weight: 700;
+    width: 68px;
+    height: 45px;
+    position: absolute;
+    top: 7px;
+    left: 69px;
+    line-height: 45px;
+}
+.FirstWhiteBoxContent>p{
+    width: 206px;
+    height: 90px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: var(--GreenBlue);
+    position: absolute;
+    left: 36px;
+    top: 35px;
+}
+.SecondWhitebox{
+    width: 183px;
+    height: 90px;
+    position: absolute;
+    top: 562px;
+    left: 589px;
+    background-color: var(--White);
+    border-radius: 24px;
+}
+.SecondWhiteBoxContent>div{
+    height: 45px;
+    width: 54px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 20px;
+    color: var(--GreenBlue);
+    position: absolute;
+    top: 20px;
+    left: 44px;
+}
+.SecondWhiteBoxContent>p{
+    width: 112px;;
+    height: 20px;
+    color: var(--GreenBlue);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    position: absolute;
+    top: 40px;
+    left: 41px;
+}
+.SecondWhiteBoxContent>img{
+    width: 41.25px;
+    height: 39.88px;
+    position: absolute;
+    top: 7px;
+    left: 100px;
 }

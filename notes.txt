@@ -29,6 +29,17 @@ Export Fonts
 => Export from Google Font.
 => select the font style and copy the HTML link tag.
 => paste the HTML link tag in head tag.
+******************************************
+Step 5 => HTML
+=> Pages and Tag 
+    1st page - Header #Alwyay the First page is Header  
+    2nd page - Section #Page b/w Header and Footer is Section
+    3rd page - Section
+    Last page - Footer #Always Last Page is Footer.
+=> Design idea for this page
+    => Navbar in nav tag inside div tag : GUVI About Service Ourwork EnrolNow 
+    => left Div : Subtitle , content, EnrollNow btn
+    => Right Div: Hero Image, Student Enrolled, Overall Rating
 *****************************************
 predefine CSS Color
 => We define color to call the color name and use it insted of entering the color code everytime.
@@ -43,14 +54,17 @@ TagName/.ClassName{
     background-color: var(ColorNAme);
 }
 ******************************************
-Step 5 => HTML
-=> Pages and Tag 
-    1st page - Header #Alwyay the First page is Header  
-    2nd page - Section #Page b/w Header and Footer is Section
-    3rd page - Section
-    Last page - Footer #Always Last Page is Footer.
-=> Design idea for this page
-    => Navbar in nav tag inside div tag : GUVI About Service Ourwork EnrolNow 
-    => left Div : Subtitle , content, EnrollNow btn
-    => Right Div: Hero Image, Student Enrolled, Overall Rating
- 
+gradient and linear gradient
+gradient => changes color continously
+linear gradient => start with 0% and End with 100%
+linear gradient Syntax
+TagName/.ClassName{
+    background: linear-gradient(deg , ColorCode 0%, ColorCode 100%);
+}
+******************************************
+Steps in CSS
+step 1=> enter the color in css to call easy
+step 2=> enter width of page using *:: after and *::before{box-sizing: border-box}
+step 3=> write CSS for Navba (width, margin)
+step 4=> First write CSS for Button
+step 5=> header styling(start from top)
