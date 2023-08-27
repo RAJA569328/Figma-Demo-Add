@@ -34,12 +34,10 @@ body {
   font-family: "Poppins", sans-serif; /*Copied "CSS rules to specify families"from GOOGLE FONT
   if Poppins didn't work San-serif will work */
 }
-
 .navbar{
     max-width: 1134vw;
     margin: 0;
 }
-
 .btn{
 display: inline-block;
 padding: 16px 32px;
@@ -90,7 +88,6 @@ ul{
     gap: 60px;
     list-style: none;  /*to remove the Dot from list.*/
 }
-
 a{
     color: var(--White);
     font-size: 16px;
@@ -138,14 +135,14 @@ p{
     top: 186px;
     left: 841px;
 }
-.FirstWhitebox{
+.student-Enrolled{
     width: 206px;
     height: 90px;
     background-color: var(--White);
     border-radius: 24px;
-    position: absolute;
+    /* position: absolute;
     top: 323px;
-    left: 623px;
+    left: 623px; */
 }
 .FirstWhiteBoxContent>div{
     font-size: 36px;
@@ -169,12 +166,12 @@ p{
     left: 36px;
     top: 35px;
 }
-.SecondWhitebox{
+.Overall{
     width: 183px;
     height: 90px;
-    position: absolute;
+    /* position: absolute;
     top: 562px;
-    left: 589px;
+    left: 589px; */
     background-color: var(--White);
     border-radius: 24px;
 }
@@ -206,4 +203,23 @@ p{
     position: absolute;
     top: 7px;
     left: 100px;
+}
+.FirstWhitebox{
+    width: 206px;
+    height: 97px;
+    position: absolute;
+    top: 324px;
+    left: 630px;
+    background: linear-gradient(180deg, #6F7DFB 0%, #3B448F 100%);
+    z-index: inherit;
+    border-radius: 24px;
+}
+.SecondWhitebox{
+    width: 185px;
+    height: 95px;
+    position: absolute;
+    top: 565px;
+    left: 592px;
+    background: linear-gradient(180deg, #6F7DFB 0%, #3B448F 100%);
+    border-radius: 24px ;
 }
